@@ -105,6 +105,85 @@ const SectionThree = () => (
   </div>
 );
 
+
+
+const ContactForm = () =>(
+ 
+    <div className="w-full px-8 py-10">
+      
+      <form className="max-w-6xl mx-auto space-y-8">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <label className="block font-bold mb-2">First Name</label>
+            <input
+              type="text"
+              className="w-full h-8 bg-gray-100 p-4 rounded  outline-2 outline-transparent hover:outline-lime-500"
+            />
+          </div>
+
+          <div>
+            <label className="block font-bold mb-2">Last Name</label>
+            <input
+              type="text"
+              className="w-full  h-8 bg-gray-100 p-4 rounded  outline-2 outline-transparent hover:outline-lime-500"
+            />
+          </div>
+        </div>
+
+  
+        <div>
+          <label className="block font-bold mb-2">Company Name</label>
+          <input
+            type="text"
+            className="w-full  h-8 bg-gray-100 p-4 rounded  outline-2 outline-transparent hover:outline-lime-500"
+          />
+        </div>
+
+   
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <label className="block font-bold  mb-2">Phone Number</label>
+            <input
+              type="text"
+              className="w-full  h-8 bg-gray-100 p-4 rounded  outline-2 outline-transparent hover:outline-lime-500"
+            />
+          </div>
+
+          <div>
+            <label className="block font-bold mb-2">
+              Your Email <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              className="w-full  h-8 bg-gray-100 p-4 rounded  outline-2 outline-transparent hover:outline-lime-500"
+              required
+            />
+          </div>
+        </div>
+
+   
+        <div>
+          <label className="block font-bold mb-2">
+            How can we help? <span className="text-red-500">*</span>
+          </label>
+          <textarea
+            rows="4"
+            className="w-full  bg-gray-100 p-4 rounded  outline-2 outline-transparent hover:outline-lime-500"
+            required
+          ></textarea>
+        </div>
+        <button className="bg-lime-500 p-3 font-semibold rounded-4xl outline-2 outline-transparent hover:outline-lime-500 hover:bg-white hover:text-lime-500 hover:cursor-pointer ">SEND MESSAGE</button>
+      </form>
+    </div>
+
+);
+
+
+
+ 
+
+
 // Home Component
 const Home = () => (
   <>
@@ -112,6 +191,7 @@ const Home = () => (
     <HeroSection />
     <SectionTwo />
     <SectionThree />
+    <ContactForm/>
   </>
 );
 
