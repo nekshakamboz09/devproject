@@ -9,7 +9,7 @@ const SectionOne = () => (
       alt="Services"
       className="absolute inset-0 w-full h-full object-cover"
     />
-    <div className="relative flex flex-col items-center justify-start py-40 text-center px-4 mt-40">
+    <div className="relative flex flex-col items-center justify-start py-40 text-center px-4 ">
       <p className="text-white sm:text-lg mt-6 opacity-90 ">
         <span className="text-lime-500 hover:text-white cursor-pointer hover:underline hover:decoration-rose-500 ">
           Home
