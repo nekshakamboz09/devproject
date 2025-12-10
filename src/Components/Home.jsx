@@ -202,68 +202,69 @@ const ContactForm = () => (
 );
 
 const SectionFour = () => (
-   <div className="relative w-full h-full">
+  <div className="relative w-full min-h-[120vh] pb-20"> 
     {/* Background Image */}
     <img
       src={image3}
       alt="background"
-      className="w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-cover"
     />
 
+    {/* Dark overlay (optional but makes text readable) */}
+    <div className="absolute inset-0 bg-black/30"></div>
+
     {/* Heading & Subtitle */}
-    <div className="absolute inset-0 flex flex-col items-center justify-start pt-20 text-center px-4">
-      
+    <div className="relative flex flex-col items-center justify-start pt-20 text-center px-4">
       <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
         Key Benefits of Web  
         <br className="hidden sm:block" />
         Development Services
       </h1>
 
-      <p className="text-white  sm:text-lg mt-6 mb-15 opacity-90">
+      <p className="text-white sm:text-lg mt-6 opacity-90">
         Executing on strategy and design.
       </p>
     </div>
 
-    {/* 🟩 Cards Section (Centered Under Heading, NOT overlapping) */}
-    <div className="absolute top-[40%] px-4 sm:px-10 flex flex-wrap justify-center gap-8 text-sm w-full ">
+    {/* Cards Section */}
+    <div className="relative mt-20 px-4 sm:px-10 flex flex-wrap justify-center gap-8 w-full">
       
-      <div className="bg-white  shadow-xl p-6 w-[260px] text-center">
-        <img src={visibilty} className="w-52 h-52" />
+      <div className="bg-white shadow-xl p-6 w-[260px] text-center">
+        <img src={visibilty} className="w-52 h-52 mx-auto" />
         <h2 className="text-xl font-bold">Visibility</h2>
         <p className="text-gray-600 mt-2 leading-relaxed max-w-xs mx-auto">
-         Track progress on your project from start to finish with a dedicated Project Manager and development lead.
+          Track progress on your project from start to finish with a dedicated Project Manager and development lead.
         </p>
       </div>
 
-      <div className="bg-white  shadow-xl p-8 w-[260px] text-center">
-        <img src={InsightIcon} className="w-52 h-52" />
+      <div className="bg-white shadow-xl p-8 w-[260px] text-center">
+        <img src={InsightIcon} className="w-52 h-52 mx-auto" />
         <h2 className="text-xl font-bold">Insight</h2>
         <p className="text-gray-600 mt-2 leading-relaxed max-w-xs mx-auto">
-          Ask questions–even the “dumb” ones–throughout the entire build. We know the answers
+          Ask questions–even the “dumb” ones–throughout the entire build. We know the answers.
         </p>
       </div>
 
-      <div className="bg-white  shadow-xl p-8 w-[260px] text-center">
-        <img src={IntegrationIcon} className="w-52 h-52" />
+      <div className="bg-white shadow-xl p-8 w-[260px] text-center">
+        <img src={IntegrationIcon} className="w-52 h-52 mx-auto" />
         <h2 className="text-xl font-bold">Integration</h2>
         <p className="text-gray-600 mt-2 leading-relaxed max-w-xs mx-auto">
           By integrating with existing internal systems like CRM, AMS and ERPs we can create a holistic solution.
-
-
         </p>
       </div>
 
-      <div className="bg-white  shadow-xl p-8 w-[260px] text-center">
-        <img src={ConfidenceIcon} className="w-52 h-52" />
+      <div className="bg-white shadow-xl p-8 w-[260px] text-center">
+        <img src={ConfidenceIcon} className="w-52 h-52 mx-auto" />
         <h2 className="text-xl font-bold">Confidence</h2>
         <p className="text-gray-600 mt-2 max-w-xs mx-auto leading-relaxed">
           Relax knowing we support security, accessibility, scalability, recoverability and transparency.
         </p>
       </div>
-    </div>
 
+    </div>
   </div>
 );
+
 
 const SectionFive = () => (
   <div className="pt-20 bg-white pb-20 px-4 sm:px-8">
@@ -363,6 +364,7 @@ const SectionSix=()=>(
 
 const Home = () => (
   <>
+  <div className="overflow-x-hidden w-full">
     <Navbar />
     <HeroSection />
     <SectionTwo />
@@ -372,6 +374,7 @@ const Home = () => (
     <SectionFive/>
     <SectionSix/>
     <Footer />
+    </div>
   </>
 );
 
