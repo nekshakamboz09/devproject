@@ -2,6 +2,16 @@ import React from "react";
 import Navbar from "./Navbar";
 import image from "../assets/image.png";
 import image2 from "../assets/image2.jpeg";
+import image3 from "../assets/image3.jpg";
+import visibilty from "../assets/visibilty.png";
+import ConfidenceIcon from "../assets/confidence.png";
+import IntegrationIcon from "../assets/integration.png";
+import InsightIcon from "../assets/insight.png";
+import insights1 from "../assets/insights1.jpg";
+import insights2 from "../assets/insights2.webp";
+import insights3 from "../assets/insights3.webp";
+import Footer from "./Footer";
+
 
 
 const HeroSection = () => (
@@ -191,6 +201,166 @@ const ContactForm = () => (
   </div>
 );
 
+const SectionFour = () => (
+   <div className="relative w-full h-full">
+    {/* Background Image */}
+    <img
+      src={image3}
+      alt="background"
+      className="w-full h-full object-cover"
+    />
+
+    {/* Heading & Subtitle */}
+    <div className="absolute inset-0 flex flex-col items-center justify-start pt-20 text-center px-4">
+      
+      <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+        Key Benefits of Web  
+        <br className="hidden sm:block" />
+        Development Services
+      </h1>
+
+      <p className="text-white  sm:text-lg mt-6 mb-15 opacity-90">
+        Executing on strategy and design.
+      </p>
+    </div>
+
+    {/* 🟩 Cards Section (Centered Under Heading, NOT overlapping) */}
+    <div className="absolute top-[40%] px-4 sm:px-10 flex flex-wrap justify-center gap-8 text-sm w-full ">
+      
+      <div className="bg-white  shadow-xl p-6 w-[260px] text-center">
+        <img src={visibilty} className="w-52 h-52" />
+        <h2 className="text-xl font-bold">Visibility</h2>
+        <p className="text-gray-600 mt-2 leading-relaxed max-w-xs mx-auto">
+         Track progress on your project from start to finish with a dedicated Project Manager and development lead.
+        </p>
+      </div>
+
+      <div className="bg-white  shadow-xl p-8 w-[260px] text-center">
+        <img src={InsightIcon} className="w-52 h-52" />
+        <h2 className="text-xl font-bold">Insight</h2>
+        <p className="text-gray-600 mt-2 leading-relaxed max-w-xs mx-auto">
+          Ask questions–even the “dumb” ones–throughout the entire build. We know the answers
+        </p>
+      </div>
+
+      <div className="bg-white  shadow-xl p-8 w-[260px] text-center">
+        <img src={IntegrationIcon} className="w-52 h-52" />
+        <h2 className="text-xl font-bold">Integration</h2>
+        <p className="text-gray-600 mt-2 leading-relaxed max-w-xs mx-auto">
+          By integrating with existing internal systems like CRM, AMS and ERPs we can create a holistic solution.
+
+
+        </p>
+      </div>
+
+      <div className="bg-white  shadow-xl p-8 w-[260px] text-center">
+        <img src={ConfidenceIcon} className="w-52 h-52" />
+        <h2 className="text-xl font-bold">Confidence</h2>
+        <p className="text-gray-600 mt-2 max-w-xs mx-auto leading-relaxed">
+          Relax knowing we support security, accessibility, scalability, recoverability and transparency.
+        </p>
+      </div>
+    </div>
+
+  </div>
+);
+
+const SectionFive = () => (
+  <div className="pt-20 bg-white pb-20 px-4 sm:px-8">
+    {/* heading */}
+    <div className="  items-center justify-start  text-center px-4">
+      <h1 className=" text-blue-900 text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+        Our Most Popular Web  
+        <br className="hidden sm:block" />
+        Development Services
+      </h1>
+    </div>
+    {/* cards */}
+    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-10">
+      {/* Card 1 */}
+      <div className=" rounded-lg p-6 shadow hover:shadow-lg transition duration-300">
+        <h2 className="text-4xl font-bold mb-4">Symfony Solutions</h2>
+        <p className="text-gray-700 text-xl">
+          As the exclusive North American SensioLabs partner, we offer certified Symfony developers for the most complex custom software and integration needs.
+        </p>
+        <button className="mt-4 text-black p-6 rounded-4xl text-bold text-center font-semibold bg-lime-500 oultine-1 outline-transparent hover:outline-2 hover:outline-lime-500 hover:text-lime-500 hover:bg-white cursor-pointer">START A PROJECT</button>
+      </div>
+      {/* Card 2 */}
+      <div className=" rounded-lg p-6 shadow hover:shadow-lg transition duration-300">
+        <h2 className="text-4xl font-bold mb-4">Drupal Websites</h2>
+        <p className="text-gray-700 text-xl">
+  Having built and launched more than 50 enterprise instances in Drupal, we understand the platform's capabilities. We also manage migrations from Drupal 7 or 9 to Drupal 10.
+        </p>
+        <button className="mt-4 text-black p-6 rounded-4xl text-bold text-center font-semibold bg-lime-500 oultine-1 outline-transparent hover:outline-2 hover:outline-lime-500 hover:text-lime-500 hover:bg-white cursor-pointer">START A PROJECT</button>
+      </div>
+      {/* Card 3 */}
+      <div className=" rounded-lg p-6 shadow hover:shadow-lg transition duration-300">
+        <h2 className="text-4xl font-bold mb-4">Custom Software</h2>
+        <p className="text-gray-700 text-xl">
+          We can build inventory management, asset tracking, custom APIs, document management systems, and custom solutions to your unique specifications.
+        </p>
+        <button className="mt-4 text-black p-6 rounded-4xl text-bold text-center font-semibold bg-lime-500 oultine-1 outline-transparent hover:outline-2 hover:outline-lime-500 hover:text-lime-500 hover:bg-white cursor-pointer">START A PROJECT</button>
+      </div>
+      {/* Card 4 */}
+      <div className=" rounded-lg p-6 shadow hover:shadow-lg transition duration-300">
+        <h2 className="text-4xl font-bold mb-4">WordPress Websites</h2>
+        <p className="text-gray-700 text-xl">
+          Our team has built websites in WordPress for everything from traditional blog sites to fully customized, integrated enterprise websites. We can leverage the WordPress platform to meet your requirements.
+        </p>
+        <button className="mt-4 text-black p-6 rounded-4xl text-bold text-center font-semibold bg-lime-500 oultine-1 outline-transparent hover:outline-2 hover:outline-lime-500 hover:text-lime-500 hover:bg-white cursor-pointer transition ">START A PROJECT</button>
+      </div>
+        </div>
+        </div>
+  
+);
+
+const SectionSix=()=>(
+  <div className="pt-10 bg-white pb-20 px-4 sm:px-8">
+    <div className="items-center justify-start  text-center px-4">
+      <h1 className="text-blue-900 text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+        Related Insights
+      </h1>
+    </div>
+    {/* cards */}
+    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-10">
+      {/* Card 1 */}
+      <div className=" p-4">
+        <img src={insights1} alt="Insight 1" className="w-full h-48 object-cover rounded mb-4" />
+         <h2 className="text-xl font-bold mb-2 text-lime-500">BLOG</h2>
+        <h2 className="text-4xl font-bold text-blue-900 leading-12 mb-2 hover:underline hover:underline-offset-4 hover:decoration-rose-700 cursor-pointer hover:text-black">Mastering B2B eCommerce Website Development: Insights from Industry Experts</h2>
+        <p className="text-gray-700 text-xl">
+          eCommerce web development is critical for B2B success. We explore key factors when designing your B2B eCommerce website.
+        </p>
+        <button className="mt-3 text-blue-900 pt-4 font-bold text-center cursor-pointer hover:text-lime-500 hover:pl-2">READ MORE</button>
+        </div>
+      {/* Card 2 */}
+      <div className=" p-4">
+        <img src={insights2} alt="Insight 1" className="w-full h-48 object-cover rounded mb-4" />
+         <h2 className="text-xl font-bold mb-2 text-lime-500">BLOG</h2>
+        <h2 className="text-4xl font-bold text-blue-900 leading-12 mb-2 hover:underline hover:underline-offset-4 hover:decoration-rose-700 cursor-pointer hover:text-black">Important Website Metrics for Associations to Track</h2>
+        <p className="text-gray-700 text-xl">
+          Discover key website metrics to boost engagement, personalization, and growth for associations. Measure success today.
+        </p>
+        <button className="mt-3 text-blue-900 pt-4 font-bold text-center cursor-pointer hover:text-lime-500 hover:pl-2">READ MORE</button>
+        </div>
+      {/* Card 3 */}
+      <div className=" p-4">
+        <img src={insights3} alt="Insight 1" className="w-full h-48 object-cover rounded mb-4" />
+         <h2 className="text-xl font-bold mb-2 text-lime-500">BLOG</h2>
+        <h2 className="text-4xl font-bold text-blue-900 leading-12 mb-2 hover:underline hover:underline-offset-4 hover:decoration-rose-700 cursor-pointer hover:text-black">5 Key Features of Any Great Association Website</h2>
+        <p className="text-gray-700 text-xl">
+        Build a successful association website with user-focused design, accessibility, and community engagement.
+        </p>
+        <button className="mt-3 text-blue-900 pt-4 font-bold text-center cursor-pointer hover:text-lime-500 hover:pl-2">READ MORE</button>
+        </div>
+        </div>
+    <button className="mt-8 bg-blue-900 hover:bg-white hover:text-blue-900 outline-2 outline-transparent hover:outline-blue-900 text-white font-bold px-3 py-2 rounded-full text-lg mx-auto block cursor-pointer"> ALL INSIGHTS</button>
+      
+    </div>
+);
+
+
+
 const Home = () => (
   <>
     <Navbar />
@@ -198,6 +368,10 @@ const Home = () => (
     <SectionTwo />
     <SectionThree />
     <ContactForm />
+    <SectionFour/>
+    <SectionFive/>
+    <SectionSix/>
+    <Footer />
   </>
 );
 
