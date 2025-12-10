@@ -154,42 +154,80 @@ const Navbar = () => {
       </div>
 
       {/* ⭐ MOBILE MENU PANEL */}
-      {menuOpen && (
-        <div className="md:hidden bg-white w-full shadow-lg px-6 py-6 space-y-4 text-gray-800 text-lg font-bold">
-          <p className="cursor-pointer">ABOUT</p>
+     {menuOpen && (
+  <div className="md:hidden bg-white w-full shadow-lg px-6 py-6 space-y-4 text-gray-800 text-lg font-bold">
+    <Link to="/about" className="cursor-pointer block">
+      ABOUT
+    </Link>
 
-          {/* ⭐ MOBILE SERVICES DROPDOWN */}
-          <div>
-            <p
-              className="cursor-pointer flex items-center justify-between"
-              onClick={() => setServiceOpen(!serviceOpen)}
-            >
-              SERVICES <span>▼</span>
-            </p>
+    {/* ⭐ MOBILE SERVICES DROPDOWN */}
+    <div>
+      <p
+        className="cursor-pointer flex items-center justify-between"
+        onClick={() => setServiceOpen(!serviceOpen)}
+      >
+        SERVICES <span>▼</span>
+      </p>
 
-            {serviceOpen && (
-              <ul className="pl-4 py-2 space-y-3 text-sm">
-                <li>Strategy & Optimization</li>
-                <li>Design & User Experience</li>
-                <li>Technology & Website Development</li>
-                <li>eCommerce Website Development</li>
-                <li>Custom Application Development</li>
-                <li>DevOps & Hosting</li>
-                <li>Long-Term Partnership</li>
-              </ul>
-            )}
-          </div>
-
-          <p className="cursor-pointer">INDUSTRIES</p>
-          <p className="cursor-pointer">BLOG</p>
-          <p className="cursor-pointer">WORK</p>
-
-          {/* ⭐ MOBILE BUTTON */}
-          <button className="bg-blue-800 text-white px-7 py-3 rounded-full text-sm font-bold w-full">
-            START A PROJECT
-          </button>
-        </div>
+      {serviceOpen && (
+        <ul className="pl-4 py-2 space-y-3 text-sm">
+          <li>
+            <Link to="/services/strategy" className="block">
+              Strategy & Optimization
+            </Link>
+          </li>
+          <li>
+            <Link to="/services/design" className="block">
+              Design & User Experience
+            </Link>
+          </li>
+          <li>
+            <Link to="/services/technology" className="block">
+              Technology & Website Development
+            </Link>
+          </li>
+          <li>
+            <Link to="/services/ecommerce" className="block">
+              eCommerce Website Development
+            </Link>
+          </li>
+          <li>
+            <Link to="/services/custom-apps" className="block">
+              Custom Application Development
+            </Link>
+          </li>
+          <li>
+            <Link to="/services/devops" className="block">
+              DevOps & Hosting
+            </Link>
+          </li>
+          <li>
+            <Link to="/services/long-term" className="block">
+              Long-Term Partnership
+            </Link>
+          </li>
+        </ul>
       )}
+    </div>
+
+    <Link to="/industries" className="cursor-pointer block">
+      INDUSTRIES
+    </Link>
+
+    <Link to="/blog" className="cursor-pointer block">
+      BLOG
+    </Link>
+
+    <Link to="/work" className="cursor-pointer block">
+      WORK
+    </Link>
+
+    <button className="bg-blue-800 text-white px-7 py-3 rounded-full text-sm font-bold w-full">
+      START A PROJECT
+    </button>
+  </div>
+)}
+
     </nav>
   );
 };

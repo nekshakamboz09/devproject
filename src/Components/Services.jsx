@@ -28,12 +28,12 @@ const SectionTwo = () => (
     <h1 className="text-6xl font-bold text-blue-950 ">
       What will you Unleash?
     </h1>
-    <p className="px-70 py-10 text-lg">
+    <p className="px-6 sm:px-12 md:px-24 lg:px-40 xl:px-60 py-10 text-base sm:text-lg lg:text-xl ">
       Creating custom websites, applications and software that drive measurable
       results is in our DNA. Aligning our team with your goals makes that
       possible.
     </p>
-    <button className="bg-lime-500 text-white px-6 py-2 rounded-full text-xl hover:bg-lime-600 transition duration-300 font-semibold outline-2 outline-transparent hover:outline-lime-500 hover:text-lime-500 hover:bg-white cursor-pointer">
+    <button className="bg-lime-500 text-white px-6 py-2 rounded-full text-xl hover:bg-lime-600 transition duration-300 font-semibold outline-2 outline-transparent hover:outline-lime-500 hover:text-lime-500 hover:bg-white-100 cursor-pointer">
       START THE DISCOVERY PROCESS
     </button>
   </div>
